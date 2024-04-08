@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/7adf3be8fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Church.css">
+</head>
+<body>
+    <section class="header">
+        <nav id="navbar">
+            <a href="My Church.html"><span class="logo"><img src="Inkedlogo-removebg-preview_LI-removebg-preview.png"></span></a>
+           <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i> 
+              <ul>
+                <li><a href="My Church.html">HOME</a></i></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="events.html">CHURCH EVENTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+              </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="member">
+            <form id="payment-form">
+                <h3>Membership Registration Form.</h3>
+                <div class="reg">
+                  <label>Name:</label>
+                  <input type="text" name="userName" />
+                </div>
+                <div class="reg">
+                  <label>Email:</label>
+                  <input type="email" name="userEmail" />
+                </div>
+                <div class="reg">
+                  <label>Gender:</label>
+                  <input type="text" name="userGender" />
+                </div>
+                <div class="reg">
+                  <label>Age:</label>
+                  <input type="number" name="userAge" />
+                </div>
+                <div class="reg">
+                  <label>Zone:</label>
+                  <input type="text" name="userZone" />
+                </div>
+                <div class="reg">
+                  <label>Status:</label>
+                  <input type="text" name="userStatus" option="fullMember/associate-member/guest"/>
+                </div>
+                <div class="reg">
+                    <button id="submit-to-google-sheet" onclick="submit()" type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1  class="sub-title">Contact Us</h1>
+                        <p><a href="#"><i class="fa-solid fa-envelope"></i>huruma.fc.quakers@gmail.com</a></p>
+                        <p><a href="#"><i class="fa-solid fa-phone"></i>+254727372462</a></p>
+                    </div>
+                </div>
+                <div class="contact-write">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                        <button onclick="SubmitEvent()" type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>  
+                </div>
+                <div class="member">
+                    <h4>To Support Our Programs</h4>
+                    <button  class="btn1"><a href="payment.html">click to support</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/gladys.midega"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://wa.me/+254"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+<footer>
+    <div class="copyright">
+            Copyright ©
+            <h4>Friends Church Huruma-Eldoret</h4>
+            2024.
+        <p>
+            Made with<i class="fa fa-heart-o"></i> by Kwanusu
+        </p>
+    </div> 
+</footer>
+<script src="Church.js">
+  
+</script>
+</body>
+</html>
